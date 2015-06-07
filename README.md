@@ -5,6 +5,10 @@
 为此国内最大的域名解析商[DNSPod](https://www.dnspod.cn)为app开发者推出了[D+(http dns)](https://www.dnspod.cn/httpdns)的服务来解决这个问题。
 我在做一个图片app时也遇到了域名解析的问题，正好封装了一下。
 
+- [源码在这里](https://github.com/onlytiancai/android-httpdns/blob/master/HttpDNS/app/src/main/java/com/ihuhao/app/httpdns/HttpDNS.java), 直接拷贝到项目里用就行
+- [测试代码](https://github.com/onlytiancai/android-httpdns/blob/master/HttpDNS/app/src/main/java/com/ihuhao/app/httpdns/MainActivity.java)
+- 其它文件基本都是Android Studio自动生成的，本项目可以Clone直接真机调试。
+
 ### 使用
 
 如下
