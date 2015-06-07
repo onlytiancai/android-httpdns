@@ -46,9 +46,11 @@
 	06-07 20:05:18.354  23990-24418/com.ihuhao.app.myapplication I/dns resove:﹕ begin:e.hiphotos.baidu.com
 	06-07 20:05:38.454  23990-24418/com.ihuhao.app.myapplication I/dns resove:﹕ end:e.hiphotos.baidu.com [B@435f8ec0
 
-可以看到使用http dns在本机没有缓存的情况下，解析域名用了不到1秒，而用InetAddress.getByName则花了20秒，我用真机测试的，联网方式是wifi。
-改用电信3G方式测试，http dns比系统自带的解析慢300毫秒吧，我封装的库会缓存结果几分钟，后面的请求会快很多, 再就是我在电信3G模式下
-有时候也经常解析10秒以上，但用http dns从来没鱼洞啊过，所以整体上来看用http dns还是很有优势的。
+可以看到使用http dns在本机没有缓存的情况下，解析域名才用了100多毫秒，而用InetAddress.getByName则花了20秒，我用真机测试的，联网方式是wifi。
+
+
+改用电信3G方式测试了几次，http dns最慢的时候比系统自带的解析慢300毫秒吧，我封装的库会缓存结果几分钟，后面的请求会快很多, 
+再就是我在电信3G模式下有时候也经常解析10秒以上，但用http dns从来没遇到过，基本是几百毫秒，所以整体上来看用http dns还是很有优势的。
 
 
 	06-07 20:14:40.444  28905-29173/com.ihuhao.app.myapplication I/HttpDNS resove:﹕ begin:c.hiphotos.baidu.com
